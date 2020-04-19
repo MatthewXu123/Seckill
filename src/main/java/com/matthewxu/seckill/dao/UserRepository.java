@@ -14,5 +14,5 @@ import org.springframework.stereotype.Repository;
 public interface UserRepository extends JpaRepository<User, Integer> {
 
     @Override
-    User getOne(Integer integer);
+    User getOne(Integer id);
 }

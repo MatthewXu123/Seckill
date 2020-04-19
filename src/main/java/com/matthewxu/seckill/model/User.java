@@ -1,6 +1,7 @@
 package com.matthewxu.seckill.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * @CLassName User
@@ -9,8 +10,8 @@ import javax.persistence.*;
  * Description: TODO
  */
 @Entity
-@Table(name = "Suser")
-public class User {
+@Table(name = "suser")
+public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
