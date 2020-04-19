@@ -1,5 +1,6 @@
 package com.matthewxu.seckill.service;
 
+import com.matthewxu.seckill.model.User;
 import org.springframework.stereotype.Service;
 
 /**
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Service;
  * @Date 4/17/2020
  * Description: TODO
  */
-@Service
 public interface UserService {
 
+    User getUserById(int id);
 }
