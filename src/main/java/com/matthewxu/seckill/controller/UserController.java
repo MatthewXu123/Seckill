@@ -38,6 +38,7 @@ public class UserController {
 
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
     public Object handleException(HttpServletRequest req, Exception ex){
         CommonReturnType commonReturnType = new CommonReturnType();
         commonReturnType.setStatus("fail");
