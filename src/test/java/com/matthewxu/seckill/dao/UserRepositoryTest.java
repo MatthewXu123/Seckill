@@ -21,4 +21,11 @@ public class UserRepositoryTest {
         assertEquals("tom",user.getUsername());
         assertEquals("123456",user.getPassword());
     }
+
+    @Test
+    public void testGetUserById(){
+        User user = userRepository.getUserById(1);
+        assertEquals("tom",user.getUsername());
+        assertEquals("123456",user.getPassword());
+    }
 }

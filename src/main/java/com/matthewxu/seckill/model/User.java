@@ -1,5 +1,7 @@
 package com.matthewxu.seckill.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -11,7 +13,10 @@ import java.io.Serializable;
  */
 @Entity
 @Table(name = "suser")
+@JsonIgnoreProperties(value = {"hibernateLazyInitializer"})
 public class User implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -15,4 +15,6 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 
     @Override
     User getOne(Integer id);
+
+    User getUserById(Integer id);
 }
